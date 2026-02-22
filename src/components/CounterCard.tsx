@@ -25,7 +25,7 @@ export default function CounterCard({ value, label, pad = false }: CounterCardPr
             </div>
 
             {/* Label */}
-            <span className="font-display text-[11px] lg:text-[16px] tracking-[0.08em] text-brand-label">
+            <span className="font-display text-[11px] lg:text-[16px] tracking-[0.08em] text-brand-label opacity-80">
                 {label}
             </span>
         </div>

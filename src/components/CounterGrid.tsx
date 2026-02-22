@@ -15,7 +15,8 @@ const UNITS: { key: keyof ElapsedTime; label: string; pad: boolean; }[] = [
 
 export default function CounterGrid({ elapsed }: CounterGridProps) {
     return (
-        <div className="flex flex-col items-center gap-[5px] px-[15px] md:flex-row md:justify-center md:gap-[15px] md:px-0">
+        <div
+            className="flex flex-col items-center flex-1 justify-between gap-1.25 px-3.75 w-full sm:flex-row sm:gap-2 sm:px-0 sm:max-w-2xl lg:max-w-7xl lg:gap-3.75 lg:items-start">
             {UNITS.map(({ key, label, pad }) => (
                 <CounterCard
                     key={key}

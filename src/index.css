@@ -5,13 +5,16 @@
 
   --color-brand-bg: #bbeeff;
   --color-brand-cardFrom: #aee6ff;
-  --color-brand-label: #6b4e9b;
+  --color-brand-label: #7A5CFA;
 
-  --radius-card: 28px;
-  
-  --breakpoint-xs: 30rem;
-  --breakpoint-2xl: 100rem;
-  --breakpoint-3xl: 120rem;
+  --radius-card: 32px;
+
+  --animate-float: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
 }
 
 /*

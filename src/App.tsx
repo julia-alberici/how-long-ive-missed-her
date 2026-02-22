@@ -16,7 +16,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen w-full bg-brand-bg flex flex-col items-center justify-center pb-8 md:gap-12 md:py-12">
+    <div className="min-h-screen w-full bg-brand-bg flex flex-col items-center justify-center pb-8 px-4 overflow-y-hidden sm:flex-row sm:items-center sm:justify-center sm:px-0 sm:pb-0 lg:px-4 lg:mt-0 lg:flex-col xl:gap-2 xl:pb-12">
       <CatIllustration />
       <CounterGrid elapsed={elapsed} />
     </div>

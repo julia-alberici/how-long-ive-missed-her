@@ -9,6 +9,7 @@ export interface ElapsedTime {
 }
 
 export const START_DATE: Date = new Date('2025-10-07T06:30:00');
+export const START_DATE_LABEL = DateTime.fromJSDate(START_DATE).toFormat('LLL d, yyyy');
 
 export function calculateElapsed(from: Date): ElapsedTime {
     const diff = DateTime.fromJSDate(from)

@@ -8,7 +8,7 @@ export interface ElapsedTime {
     seconds: number;
 }
 
-export const START_DATE: Date = new Date('2025-10-07T06:00:00');
+export const START_DATE: Date = new Date('2025-10-07T06:30:00');
 
 export function calculateElapsed(from: Date): ElapsedTime {
     const diff = DateTime.fromJSDate(from)

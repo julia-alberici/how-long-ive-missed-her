@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import CatIllustration from './components/CatIllustration';
 import CounterGrid from './components/CounterGrid';
 import { calculateElapsed, START_DATE, type ElapsedTime } from './utils/date';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   const [elapsed, setElapsed] = useState<ElapsedTime>(() =>
@@ -19,6 +20,7 @@ export default function App() {
     <div className="min-h-screen w-full bg-brand-bg flex flex-col items-center justify-center pb-8 px-4 overflow-y-hidden sm:flex-row sm:items-center sm:justify-center sm:px-0 sm:pb-0 lg:px-4 lg:mt-0 lg:flex-col xl:gap-2 xl:pb-12">
       <CatIllustration />
       <CounterGrid elapsed={elapsed} />
+      <Analytics />
     </div>
   );
 }
